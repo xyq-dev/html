@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>我的第一个 Git 页面</title>
+  <title>关于我</title>
   <style>
     * {
       margin: 0;
@@ -41,38 +41,30 @@
       color: #666;
       font-size: 1.05rem;
       line-height: 1.7;
+      margin-bottom: 28px;
     }
 
-    .badge {
+    .link {
       display: inline-block;
-      margin-top: 28px;
-      padding: 8px 20px;
+      padding: 10px 24px;
       background: #667eea;
       color: #fff;
-      border-radius: 20px;
-      font-size: 0.85rem;
-    }
-
-    .nav-link {
-      display: inline-block;
-      margin-top: 16px;
-      color: #667eea;
       text-decoration: none;
+      border-radius: 20px;
       font-size: 0.95rem;
+      transition: background 0.2s;
     }
 
-    .nav-link:hover {
-      text-decoration: underline;
+    .link:hover {
+      background: #5a6fd6;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>我的第一个 Git 页面</h1>
-    <p>这是我用 Cursor 创建并上传到 GitHub 的第一个 HTML 页面</p>
-    <span class="badge">Git 学习项目</span>
-    <br>
-    <a class="nav-link" href="about.html">关于页面</a>
+    <h1>关于这个 Git 学习项目</h1>
+    <p>这是我在新分支中添加的第二个 HTML 页面，用来学习 Git 分支开发流程。</p>
+    <a class="link" href="index.html">返回首页</a>
   </div>
 </body>
 </html>
