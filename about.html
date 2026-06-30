@@ -25,23 +25,75 @@
       background: #fff;
       border-radius: 16px;
       padding: 48px 40px;
-      max-width: 520px;
+      max-width: 560px;
       width: 100%;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-      text-align: center;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 600;
     }
 
     h1 {
       color: #333;
       font-size: 1.8rem;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 0.95rem;
+      text-align: center;
+      margin-bottom: 28px;
     }
 
     p {
       color: #666;
       font-size: 1.05rem;
       line-height: 1.7;
-      margin-bottom: 28px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      color: #444;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border-left: 3px solid #667eea;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 6px 14px;
+      background: #f0f2ff;
+      color: #667eea;
+      border-radius: 16px;
+      font-size: 0.85rem;
+    }
+
+    .actions {
+      text-align: center;
+      margin-top: 32px;
     }
 
     .link {
@@ -62,9 +114,29 @@
 </head>
 <body>
   <div class="card">
+    <div class="avatar">G</div>
     <h1>关于这个 Git 学习项目</h1>
-    <p>这是我在新分支中添加的第二个 HTML 页面，用来学习 Git 分支开发流程。</p>
-    <a class="link" href="index.html">返回首页</a>
+    <p class="subtitle">HTML · Git · GitHub 协作练习</p>
+
+    <div class="section">
+      <h2>项目简介</h2>
+      <p>这是我在功能分支上开发的第二个 HTML 页面，用来练习 Git 分支开发、合并 main 以及 push 到远程仓库的完整流程。</p>
+    </div>
+
+    <div class="section">
+      <h2>正在学习的内容</h2>
+      <div class="tags">
+        <span class="tag">分支开发</span>
+        <span class="tag">合并 main</span>
+        <span class="tag">解决冲突</span>
+        <span class="tag">Pull Request</span>
+        <span class="tag">GitHub Push</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="link" href="index.html">返回首页</a>
+    </div>
   </div>
 </body>
 </html>
